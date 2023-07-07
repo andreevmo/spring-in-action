@@ -3,9 +3,9 @@ package tacos.data;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;
-import tacos.TacoOrder;
+import tacos.Taco;
 
-public interface OrderRepository extends CrudRepository<TacoOrder, Long> {
+public interface TacoRepository extends CrudRepository<Taco, Long> {
 
-    Page<TacoOrder> findAll(Pageable page);
+    Page<Taco> findAll(Pageable page);
 }
